@@ -6,17 +6,6 @@ import Navbar from "../components/Navbar";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [show, setShow] = useState(false);
-
-  const handleShow = (project) => {
-    setSelectedProject(project);
-    setShow(true);
-  };
-
-  const handleClose = () => {
-    setShow(false);
-    setSelectedProject(null);
-  };
 
   const projects = [
     {
@@ -26,18 +15,19 @@ const Projects = () => {
       image: project1,
     },
     {
-      title: "Food Order-Delivery  Merchant-Portal",
+      title: "Food Order-Delivery Merchant-Portal",
       description:
         "Supported the development of a food ordering and delivery platform, including merchant and customer applications.",
       image: MerchantPortal,
     },
     {
-      title: "Buider.ai Project",
+      title: "Builder.ai Project",
       description:
-        "Created a UI for a Builder.ai project.In the projects i created a full UI and also write functional code and check the code with test cases using jest and enzyme in react.js",
+        "Created a UI for a Builder.ai project. In the project, I created a full UI and also wrote functional code and test cases using Jest and Enzyme in React.js.",
       image: Builderai,
     },
   ];
+
   return (
     <>
       <Navbar />
@@ -56,6 +46,7 @@ const Projects = () => {
             ></span>
           </h2>
         </div>
+
         {projects.map((project, index) => (
           <div className="d-flex justify-content-center my-4" key={index}>
             <div
@@ -86,7 +77,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     className="img-fluid rounded"
-                    alt="project-1"
+                    alt={project.title}
                     style={{ maxWidth: "200px", height: "auto" }}
                   />
                 </div>
@@ -118,7 +109,7 @@ const Projects = () => {
                   alt="Project"
                 />
               )}
-              <p>{selectedProject?.description || "Projects-Description"}</p>
+              <p>{selectedProject?.description || "Project Description"}</p>
             </div>
             <div className="d-flex justify-content-center py-3">
               <button
