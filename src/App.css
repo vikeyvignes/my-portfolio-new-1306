@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+ */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Comfortaa", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: "Playfair Display", serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  font-family: "Nunito", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* hover cards */
+.project-cards {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.project-cards:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 0 35px 8px rgba(253, 196, 53, 0.75); */
+}
+/* download cv */
+
+.download-btn {
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.download-btn:hover {
+  background-color: #e0a800; /* slightly darker yellow */
+  transform: scale(1.01);
+  box-shadow: 0 5px 15px rgba(253, 196, 53, 0.4);
+}
+
+.download-btn:active {
+  transform: scale(1.01);
+  box-shadow: none;
+}
+
+/* linkedin */
+.linkedin-btn {
+  transition: all 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #e0a800; 
+  transform: scale(1.01);
+  box-shadow: 0 5px 15px rgba(253, 196, 53, 0.4);
+}
+
+.linkedin-btn:active {
+  box-shadow: none;
+  transform: scale(1.01);
+}
+
+.view-btn {
+  background-color: #ffff;
+  color: #000;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+
+/* Fade-in and Fade-out Animation for Modal */
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
 }
