@@ -48,7 +48,7 @@ body {
 }
 
 .linkedin-btn:hover {
-  background-color: #e0a800; 
+  background-color: #e0a800;
   transform: scale(1.01);
   box-shadow: 0 5px 15px rgba(253, 196, 53, 0.4);
 }
@@ -70,7 +70,6 @@ body {
   color: #fff;
   border-color: #000;
 }
-
 
 /* Fade-in and Fade-out Animation for Modal */
 .fade-enter {
@@ -97,4 +96,24 @@ body {
 
 .modal-backdrop.show {
   opacity: 0.5;
+}
+
+.hover-link {
+  color: #fdd835;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.hover-link .icon-hover {
+  color: #fdd835;
+  transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+  color: #c28700;
+  text-decoration: underline;
+}
+
+.hover-link:hover .icon-hover {
+  color: #c28700;
 }

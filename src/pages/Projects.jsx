@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import project1 from "../assets/images/project-1.png";
 import Builderai from "../assets/images/builderai.png";
 import MerchantPortal from "../assets/images/merchant.png";
+import Navbar from "../components/Navbar";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -39,6 +40,7 @@ const Projects = () => {
   ];
   return (
     <>
+      <Navbar />
       <div className="container py-5" id="projects">
         <div className="text-center py-5">
           <h2 className="text-dark title fw-bold d-inline-block position-relative text-white">

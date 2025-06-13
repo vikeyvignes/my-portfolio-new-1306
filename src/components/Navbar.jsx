@@ -28,7 +28,7 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" href="#about" onClick={closeNavbar}>
-                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">A</span>bout
+                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">H</span>ome
               </a>
             </li>
             <li className="nav-item">
