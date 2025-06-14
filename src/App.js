@@ -1,10 +1,5 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import About2 from "./pages/About2";
@@ -14,27 +9,25 @@ import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Router>
-        <ScrollTop />
-        <div className="App">
-          <div className="container mt-5 pt-5">
-            <Toaster
-              position="top-right"
-              reverseOrder={true}
-              toastOptions={{ duration: 1500 }}
-            />
+    <>
+      <ScrollTop />
+      <div className="App">
+        <div className="container mt-5 pt-5">
+          <Toaster
+            position="top-right"
+            reverseOrder={true}
+            toastOptions={{ duration: 1500 }}
+          />
 
-            <Routes>
-              <Route path="/" element={<About />} />
-              <Route path="/about2" element={<About2 />} />
-              <Route path="/details" element={<Details />} />
-            </Routes>
-          </div>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/about2" element={<About2 />} />
+            <Route path="/details" element={<Details />} />
+          </Routes>
         </div>
-        <Footer />
-      </Router>
-    </BrowserRouter>
+      </div>
+      <Footer />
+    </>
   );
 }
 

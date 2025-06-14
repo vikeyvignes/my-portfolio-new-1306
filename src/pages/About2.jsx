@@ -24,10 +24,10 @@ const About2 = () => {
               alt="My profile"
               className="img-fluid rounded-circle position-absolute start-50 translate-middle"
               style={{
-                width: "100%",
+                width: "88%",
                 height: "auto",
                 zIndex: 1,
-                top: "125px",
+                top: "110px",
               }}
             />
           </div>
