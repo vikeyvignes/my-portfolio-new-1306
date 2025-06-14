@@ -64,22 +64,26 @@ const Projects2 = () => {
           <div className="col-md-6 col-lg-6" key={index}>
             <div
               className={`p-3 rounded-4 shadow h-100 project-cards ${
-                index === 1 ? "bg-warning text-light" : "bg-white text-warning"
+                index === 0 ? "bg-warning text-light" : "bg-white text-warning"
               }`}
             >
               <p
-                className={`mb-1 ${index === 1 ? "text-light" : "text-muted"}`}
+                className={`mb-1 ${index === 0 ? "text-light" : "text-muted"}`}
               >
                 {exp.date}
               </p>
-              <h5 className={`fw-bold mb-2 ${index === 1 ? "text-light" : ""}`}>
+              <h5
+                className={`fw-bold mb-2 ${
+                  index === 0 ? "text-light" : "text-warning"
+                }`}
+              >
                 {exp.role}
               </h5>
-              <h6 className={index === 1 ? "text-light" : "text-secondary"}>
+              <h6 className={index === 0 ? "text-light" : "text-secondary"}>
                 {exp.topic}
               </h6>
               <p
-                className={`mt-3 ${index === 1 ? "text-light" : "text-muted"}`}
+                className={`mt-3 ${index === 0 ? "text-light" : "text-muted"}`}
               >
                 {exp.description}
               </p>
@@ -108,22 +112,26 @@ const Projects2 = () => {
           <div className="col-md-6 col-lg-6" key={index}>
             <div
               className={`p-3 rounded-4 shadow h-100 project-cards ${
-                index === 0 ? "bg-warning text-light" : "bg-white text-warning"
+                index === 1 ? "bg-warning text-light" : "bg-white text-warning"
               }`}
             >
               <p
-                className={`mb-0 ${index === 0 ? "text-light" : "text-muted"}`}
+                className={`mb-0 ${index === 1 ? "text-light" : "text-muted"}`}
               >
                 {edu.date}
               </p>
-              <h5 className={`fw-bold mb-2 ${index === 0 ? "text-light" : ""}`}>
+              <h5
+                className={`fw-bold mb-2 ${
+                  index === 1 ? "text-light" : "text-warning"
+                }`}
+              >
                 {edu.degree}
               </h5>
-              <h6 className={index === 0 ? "text-light" : "text-secondary"}>
+              <h6 className={index === 1 ? "text-light" : "text-secondary"}>
                 {edu.institution}
               </h6>
               <p
-                className={`mt-3 ${index === 0 ? "text-light" : "text-muted"}`}
+                className={`mt-3 ${index === 1 ? "text-light" : "text-muted"}`}
               >
                 {edu.description}
               </p>
