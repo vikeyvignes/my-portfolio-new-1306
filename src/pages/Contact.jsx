@@ -106,7 +106,7 @@ const Contact = () => {
               <div className="text-center text-md-end">
                 <button
                   type="submit"
-                  className="bg-warning text-white border-0 fw-semibold fs-6 px-4 py-2 rounded"
+                  className="bg-warning text-white border-0 fw-semibold fs-6 px-4 py-2 rounded subtitle"
                 >
                   Send
                 </button>

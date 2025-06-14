@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import About2 from "./pages/About2";
 import { Toaster } from "react-hot-toast";
+import Details from "./pages/Details";
 
 function App() {
   return (
@@ -19,10 +20,11 @@ function App() {
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/about2" element={<About2 />} />
+            <Route path="/details" element={<Details />} />
           </Routes>
         </div>
       </div>
-        <Footer />
+      <Footer />
     </Router>
   );
 }

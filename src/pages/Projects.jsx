@@ -33,7 +33,7 @@ const Projects = () => {
       <Navbar />
       <div className="container py-5" id="projects">
         <div className="text-center py-5">
-          <h2 className="text-dark title fw-bold d-inline-block position-relative text-white">
+          <h2 className="title fw-bold d-inline-block position-relative text-white">
             Projects
             <span
               className="d-block mx-auto mt-2"
@@ -64,7 +64,7 @@ const Projects = () => {
                   <h3 className="card-title">{project.title}</h3>
                   <p className="card-text">{project.description}</p>
                   <button
-                    className="view-btn fw-semibold px-3 py-2 rounded-pill"
+                    className="view-btn fw-semibold px-3 py-2 rounded-pill subtitle"
                     data-bs-toggle="modal"
                     data-bs-target="#projectModal"
                     onClick={() => setSelectedProject(project)}

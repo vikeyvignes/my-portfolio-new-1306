@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Navbar from "../components/Navbar";
+import Projects2 from "./Projects2";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
           <div className="col-12 col-md-6 d-flex justify-content-center order-1 order-md-2 mb-4 mb-md-0">
             <img
               src={myPic}
-              className="img-fluid rounded-pill w-75 bg-warning"
+              className="img-fluid rounded-circle px-4 w-75 bg-warning"
               style={{ maxWidth: "400px", height: "auto" }}
               alt="My profile"
             />
@@ -48,7 +49,7 @@ const About = () => {
                   download
                   className="w-100 d-block"
                 >
-                  <button className="w-100 bg-warning text-white border-0 px-4 py-2 rounded download-btn">
+                  <button className="w-100 bg-warning text-white border-0 px-4 py-2 rounded download-btn subtitle">
                     <i className="fas fa-download me-2"></i>
                     Download CV
                   </button>
@@ -62,7 +63,7 @@ const About = () => {
                   className="w-100 d-block"
                   rel="noopener noreferrer"
                 >
-                  <button className="w-100 bg-white text-dark border border-dark px-4 py-2 rounded linkedin-btn">
+                  <button className="w-100 bg-white text-dark border border-dark px-4 py-2 rounded linkedin-btn subtitle">
                     <i className="fab fa-linkedin fa-sm me-2"></i>
                     LinkedIn
                   </button>
@@ -72,6 +73,7 @@ const About = () => {
           </div>
         </div>
         <Projects />
+        <Projects2 />
         <Contact />
       </div>
     </>
