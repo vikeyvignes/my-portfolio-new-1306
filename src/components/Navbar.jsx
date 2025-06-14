@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,10 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top py-0 my-0">
       <div className="container">
         <a className="navbar-brand fw-lighter subtitle" href="/">
-          <span style={{ color: "#FDC435" }} className="fw-bolder fs-2">V</span>igneshwaran
+          <span style={{ color: "#FDC435" }} className="fw-bolder fs-2">
+            V
+          </span>
+          igneshwaran
         </a>
 
         <button
@@ -21,24 +24,44 @@ const Navbar = () => {
           aria-expanded={isOpen}
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"  style={{width:"20px"}}/>
+          <span className="navbar-toggler-icon" style={{ width: "20px" }} />
         </button>
 
-        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" href="#about" onClick={closeNavbar}>
-                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">H</span>ome
+                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
+                  H
+                </span>
+                ome
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#projects" onClick={closeNavbar}>
-                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">P</span>rojects
+                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
+                  P
+                </span>
+                rojects
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contact" onClick={closeNavbar}>
-                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">C</span>ontact
+                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
+                  C
+                </span>
+                ontact
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#workexp" onClick={closeNavbar}>
+                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
+                  E
+                </span>
+                xperiance
               </a>
             </li>
           </ul>

@@ -43,7 +43,7 @@ const Projects2 = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container py-5" id="workexp">
       <div className="text-center py-5">
         <h2 className="title fw-bold d-inline-block position-relative text-white">
           Work Experience
