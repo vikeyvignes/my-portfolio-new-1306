@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import myPic from "../assets/images/Mypic.png";
 import circlebackground from "../assets/images/Ellipse 1.png";
