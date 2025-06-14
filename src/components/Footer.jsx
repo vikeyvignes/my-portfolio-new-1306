@@ -27,8 +27,13 @@ const Footer = () => {
           Vignesh S 2025
         </p>
       </div>
-      <div>
-        <img src={bgfooter} className="img-fluid" alt="footer"/>
+      <div style={{ width: "100%", overflow: "hidden" }}>
+        <img
+          src={bgfooter}
+          className="img-fluid"
+          alt="footer"
+          style={{ objectFit: "cover", height: "auto" }}
+        />
       </div>
     </div>
   );

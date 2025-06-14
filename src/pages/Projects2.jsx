@@ -134,7 +134,7 @@ const Projects2 = () => {
 
       <div className="d-flex justify-content-center align-items-center mt-5 text-center">
         <Link
-          //   to="/details"
+          to=""
           className="text-light bg-warning border-0 rounded-3 px-3 py-2 subtitle text-decoration-none"
           style={{ width: "250px" }}
         >
