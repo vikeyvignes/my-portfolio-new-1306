@@ -12,15 +12,18 @@ const About = () => {
       <Navbar />
       <div className="container py-5 px-2 my-5" id="about">
         <div className="row align-items-center text-center text-md-start">
-          <div className="col-12 col-md-6 d-flex justify-content-center order-1 order-md-2 mb-4 mb-md-0">
+          <div className="col-12 col-md-6 d-flex justify-content-center align-items-center order-1 order-md-2 mb-4 mb-md-0 px-md-0">
             <img
               src={myPic}
-              className="img-fluid rounded-circle px-4 w-75 bg-warning"
-              style={{ maxWidth: "400px", height: "auto" }}
+              className="img-fluid rounded-2 bg-warning"
+              style={{
+                width: "100%",
+                maxWidth: "300px",
+                height: "auto",
+              }}
               alt="My profile"
             />
           </div>
-
           <div className="col-12 col-md-6 order-2 order-md-1">
             <h6 className="fw-bold subtitle" style={{ color: "#FDC435" }}>
               Frontend Developer
