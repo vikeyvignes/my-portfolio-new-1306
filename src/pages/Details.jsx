@@ -80,7 +80,7 @@ const Details = () => {
                 <Link
                   to="/details"
                   className={`px-3 py-2 ${
-                    index % 2 == 1
+                    index % 2 === 1
                       ? "text-light bg-warning"
                       : "bg-primary text-light"
                   } border-0 rounded-3 subtitle text-decoration-none`}
