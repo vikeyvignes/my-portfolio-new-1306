@@ -49,19 +49,27 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={closeNavbar}>
-                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
-                  C
-                </span>
-                ontact
-              </a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="#workexp" onClick={closeNavbar}>
                 <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
                   E
                 </span>
                 xperiance
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#education" onClick={closeNavbar}>
+                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
+                  E
+                </span>
+                ducation
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact" onClick={closeNavbar}>
+                <span style={{ color: "#FDC435" }} className="fw-bold fs-3">
+                  C
+                </span>
+                ontact
               </a>
             </li>
           </ul>

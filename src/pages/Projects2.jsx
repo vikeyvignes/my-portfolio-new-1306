@@ -91,58 +91,63 @@ const Projects2 = () => {
           </div>
         ))}
       </div>
-
-      <div className="text-center py-5 mt-5">
-        <h2 className="title fw-bold d-inline-block position-relative text-white">
-          Educational Qualification
-          <span
-            className="d-block mx-auto mt-2"
-            style={{
-              height: "3px",
-              width: "80px",
-              backgroundColor: "#FDC435",
-              borderRadius: "30px",
-            }}
-          ></span>
-        </h2>
-      </div>
-
-      <div className="row g-4">
-        {education.map((edu, index) => (
-          <div className="col-md-6 col-lg-6" key={index}>
-            <div
-              className={`p-3 rounded-4 shadow h-100 project-cards ${
-                index === 1 ? "bg-warning text-light" : "bg-white text-warning"
-              }`}
-            >
-              <p
-                className={`mb-0 ${index === 1 ? "text-light" : "text-muted"}`}
-              >
-                {edu.date}
-              </p>
-              <h5
-                className={`fw-bold mb-2 ${
-                  index === 1 ? "text-light" : "text-warning"
+      <div className="my-5 py-5">
+        <div className="text-center py-5" id="education">
+          <h2 className="my-5 title fw-bold d-inline-block position-relative text-white">
+            Educational Qualification
+            <span
+              className="d-block mx-auto mt-2"
+              style={{
+                height: "3px",
+                width: "80px",
+                backgroundColor: "#FDC435",
+                borderRadius: "30px",
+              }}
+            ></span>
+          </h2>
+        </div>
+        <div className="row g-4">
+          {education.map((edu, index) => (
+            <div className="col-md-6 col-lg-6" key={index}>
+              <div
+                className={`p-3 rounded-4 shadow h-100 project-cards ${
+                  index === 1
+                    ? "bg-warning text-light"
+                    : "bg-white text-warning"
                 }`}
               >
-                {edu.degree}
-              </h5>
-              <h6 className={index === 1 ? "text-light" : "text-secondary"}>
-                {edu.institution}
-              </h6>
-              <p
-                className={`mt-3 ${index === 1 ? "text-light" : "text-muted"}`}
-              >
-                {edu.description}
-              </p>
+                <p
+                  className={`mb-0 ${
+                    index === 1 ? "text-light" : "text-muted"
+                  }`}
+                >
+                  {edu.date}
+                </p>
+                <h5
+                  className={`fw-bold mb-2 ${
+                    index === 1 ? "text-light" : "text-warning"
+                  }`}
+                >
+                  {edu.degree}
+                </h5>
+                <h6 className={index === 1 ? "text-light" : "text-secondary"}>
+                  {edu.institution}
+                </h6>
+                <p
+                  className={`mt-3 ${
+                    index === 1 ? "text-light" : "text-muted"
+                  }`}
+                >
+                  {edu.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-
       <div className="d-flex justify-content-center align-items-center mt-5 text-center">
         <Link
-          to=""
+          to="/details"
           className="text-light bg-warning border-0 rounded-3 px-3 py-2 subtitle text-decoration-none"
           style={{ width: "250px" }}
         >
