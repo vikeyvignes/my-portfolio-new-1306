@@ -78,7 +78,7 @@ const Details = () => {
               </p>
               <div className="d-flex justify-content-center align-items-center mt-5 text-center">
                 <Link
-                  to="/details"
+                  to="/"
                   className={`px-3 py-2 ${
                     index % 2 === 1
                       ? "text-light bg-warning"
