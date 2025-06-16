@@ -1,7 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Projects2 = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/details");
+  };
   const experiences = [
     {
       date: "March 2024 - January 2025",
@@ -146,13 +150,13 @@ const Projects2 = () => {
         </div>
       </div>
       <div className="d-flex justify-content-center align-items-center mt-5 text-center">
-        <Link
-          to="/details"
+        <button
+          onClick={handleNavigate}
           className="text-light bg-warning border-0 rounded-3 px-3 py-2 subtitle text-decoration-none"
           style={{ width: "250px" }}
         >
           See More...
-        </Link>
+        </button>
       </div>
     </div>
   );
