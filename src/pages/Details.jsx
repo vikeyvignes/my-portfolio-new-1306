@@ -8,8 +8,13 @@ import { useNavigate } from "react-router-dom";
 
 const Details = () => {
   const navigate = useNavigate();
-  const handleNavigate = () => {
-    navigate("/");
+
+  const handleNavigate = (work) => {
+    if (work.link) {
+      window.open(work.link, "_blank");
+    } else {
+      navigate(`/details/${work.title}`, { state: { work } });
+    }
   };
   const myWorks = [
     {
@@ -18,16 +23,18 @@ const Details = () => {
       description:
         "I developed this ui during my training using HTML,Css,and Bootstrap.Its a web 3.0 design",
       isVideo: false,
+      link: "https://vrui-web3-template-2907.netlify.app",
     },
     {
-      title: "Shop Cart UI",
+      title: "ShopCart UI",
       image: shopcart,
       description:
         "I developed this ui during my training using HTML,Css,and Bootstrap.Its a shopping cart UI design",
       isVideo: false,
+      link: "https://shopcart-ui-template-1729.netlify.app",
     },
     {
-      title: "Tab navigation app",
+      title: "Tab Navigation app",
       image: web3,
       description:
         "I developed a tab navigation app using HTML,Css,Javascript,React js",
@@ -54,6 +61,7 @@ const Details = () => {
       description:
         "I developed this ui during my training using HTML,Css,and Bootstrap.its a bussiness template",
       isVideo: false,
+      link: "https://joyful-marshmallow-363ad5.netlify.app",
     },
   ];
   return (
@@ -115,7 +123,7 @@ const Details = () => {
               </p>
               <div className="d-flex justify-content-center align-items-center mt-5 text-center">
                 <button
-                  onClick={handleNavigate}
+                  onClick={() => handleNavigate(work)}
                   className={`px-3 py-2 subtitle ${
                     index % 2 === 1
                       ? "text-light bg-warning"
