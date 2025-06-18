@@ -13,7 +13,7 @@ const Details = () => {
   };
   const myWorks = [
     {
-      title: "Web 3.0 template",
+      title: "Web 3.0 template UI",
       image: web3,
       description:
         "I developed this ui during my training using HTML,Css,and Bootstrap.Its a web 3.0 design",
@@ -49,7 +49,7 @@ const Details = () => {
     //   isVideo: false,
     // },
     {
-      title: "Ck Template",
+      title: "Ck Template UI",
       image: cktemplate,
       description:
         "I developed this ui during my training using HTML,Css,and Bootstrap.its a bussiness template",

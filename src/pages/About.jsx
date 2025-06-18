@@ -52,7 +52,7 @@ const About = () => {
                   download
                   className="w-100 d-block"
                 >
-                  <button className="w-100 bg-warning text-white border-0 px-4 py-2 rounded download-btn subtitle">
+                  <button className="w-100 text-white border-0 px-4 py-2 rounded download-btn subtitle">
                     <i className="fas fa-download me-2"></i>
                     Download CV
                   </button>

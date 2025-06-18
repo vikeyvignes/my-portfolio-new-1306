@@ -32,7 +32,7 @@ const Projects = () => {
     <>
       <Navbar />
       <div className="container py-5" id="projects">
-        <div className="text-center py-5">
+        <div className="text-center py-3">
           <h2 className="title fw-bold d-inline-block position-relative text-white">
             Projects
             <span
