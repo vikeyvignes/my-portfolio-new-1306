@@ -1,5 +1,5 @@
 import React from "react";
-import myPic from "../assets/images/Mypic.png";
+import myPic from "../assets/images/Mypic.svg";
 import { Link } from "react-router-dom";
 import Projects from "./Projects";
 import Contact from "./Contact";

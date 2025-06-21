@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import myPic from "../assets/images/Mypic.png";
-import circlebackground from "../assets/images/Ellipse 1.png";
+import myPic from "../assets/images/Mypic.svg";
+import circlebackground from "../assets/images/Ellipse.svg";
 
 const About2 = () => {
   return (

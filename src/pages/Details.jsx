@@ -1,7 +1,7 @@
 import React from "react";
-import web3 from "../assets/images/web 3.0.png";
-import cktemplate from "../assets/images/cktemplate.png";
-import shopcart from "../assets/images/shopcart.png";
+import web3 from "../assets/images/web 3.0.svg";
+import cktemplate from "../assets/images/cktemplate.svg";
+import shopcart from "../assets/images/shopcart.svg";
 import demovideo1 from "../assets/video/demovideo-1.mp4";
 import demovideo2 from "../assets/video/demovideo-2.mp4";
 import { useNavigate } from "react-router-dom";
@@ -40,6 +40,7 @@ const Details = () => {
         "I developed a tab navigation app using HTML,Css,Javascript,React js",
       video: demovideo2,
       isVideo: true,
+      link: "https://superb-axolotl-585c1d.netlify.app",
     },
     {
       title: "Portfolio UI",
@@ -48,6 +49,7 @@ const Details = () => {
         "I Developed this ui during my traning using HTML,Sass,javascript and React js",
       video: demovideo1,
       isVideo: true,
+      link: "https://fascinating-florentine-4b849b.netlify.app",
     },
     // {
     //   title: "Web 3.0 template",
@@ -66,7 +68,7 @@ const Details = () => {
   ];
   return (
     <div className="container my-4 py-4">
-      <div className="text-center py-5">
+      <div className="text-center py-3">
         <h2 className="title fw-bold d-inline-block position-relative text-white">
           My Works
           <span

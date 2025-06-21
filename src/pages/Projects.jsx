@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import project1 from "../assets/images/project-1.png";
-import Builderai from "../assets/images/builderai.png";
-import MerchantPortal from "../assets/images/merchant.png";
+import project1 from "../assets/images/project-1.svg";
+import Builderai from "../assets/images/builderai.svg";
+import MerchantPortal from "../assets/images/merchant.svg";
 import Navbar from "../components/Navbar";
 
 const Projects = () => {

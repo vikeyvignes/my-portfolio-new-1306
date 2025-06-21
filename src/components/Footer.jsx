@@ -1,5 +1,5 @@
 import React from "react";
-import bgfooter from "../assets/images/Footer Vector.png";
+import bgfooter from "../assets/images/Vector.svg";
 
 const Footer = () => {
   return (
