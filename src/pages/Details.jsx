@@ -49,7 +49,7 @@ const Details = () => {
         "I Developed this ui during my traning using HTML,Sass,javascript and React js",
       video: demovideo1,
       isVideo: true,
-      link: "https://fascinating-florentine-4b849b.netlify.app",
+      link: "https://incredible-malasada-0a9591.netlify.app",
     },
     // {
     //   title: "Web 3.0 template",
