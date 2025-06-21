@@ -98,3 +98,41 @@ body {
 .hover-link:hover .icon-hover {
   color: #c28700;
 }
+
+.footer-icon {
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+@keyframes bounceIcon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.instagram-icon:hover {
+  color: #e1306c;
+  animation: bounceIcon 0.4s;
+}
+
+.linkedin-icon:hover {
+  color: #0077b5;
+  animation: bounceIcon 0.4s;
+}
+
+.mail-icon:hover {
+  color: #ae00ff;
+  animation: bounceIcon 0.4s;
+}
+.whatsapp-icon:hover {
+  color: #25d366;
+  animation: bounceIcon 0.4s;
+}

@@ -1,12 +1,16 @@
 import React from "react";
 import myPic from "../assets/images/Mypic.svg";
-import { Link } from "react-router-dom";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Navbar from "../components/Navbar";
 import Projects2 from "./Projects2";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/about2");
+  };
   return (
     <>
       <Navbar />
@@ -39,24 +43,21 @@ const About = () => {
               industry professionals.
               <br />
             </p>
-            <div className=" fs-6 py-1">
+            {/* <div className=" fs-6 py-1">
               <Link className=" hover-link" to="/About2">
                 <i className="far fa-user fa-md me-2 icon-hover"></i>
                 Go to About page
               </Link>
-            </div>
+            </div> */}
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start mt-3">
               <div style={{ minWidth: "180px" }}>
-                <a
-                  href="/resume/VigneshCV.pdf"
-                  download
-                  className="w-100 d-block"
+                <button
+                  className="w-100 text-white border-0 px-4 py-2 rounded download-btn subtitle"
+                  onClick={() => handleNavigate()}
                 >
-                  <button className="w-100 text-white border-0 px-4 py-2 rounded download-btn subtitle">
-                    <i className="fas fa-download me-2"></i>
-                    Download CV
-                  </button>
-                </a>
+                  <i className="fas fa-home fa-md me-2 icon-hover"></i>
+                  Go to About page
+                </button>
               </div>
 
               <div style={{ minWidth: "180px" }}>

@@ -18,7 +18,6 @@ const About2 = () => {
               className="img-fluid w-100"
               style={{ position: "relative", zIndex: 0 }}
             />
-
             <img
               src={myPic}
               alt="My profile"
@@ -47,14 +46,14 @@ const About2 = () => {
             professionals.
             <br />
           </p>
-          <div className=" fs-6 p-0 m-0">
+          <div className=" fs-6 p-0 my-5">
             <Link className=" hover-link" to="/">
               <i className="fas fa-home fa-md me-2 icon-hover"></i>
               Back to Home page
             </Link>
           </div>
           <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start mt-5">
-            <div style={{ minWidth: "180px" }}>
+            <div style={{ minWidth: "180px" }} className="mb-5">
               <a
                 href="/resume/VigneshCV.pdf"
                 download
@@ -62,7 +61,7 @@ const About2 = () => {
               >
                 <button className="w-100 bg-warning text-white border-0 px-4 py-2 rounded download-btn">
                   <i className="fas fa-download me-2"></i>
-                  Resume
+                  Download CV
                 </button>
               </a>
             </div>
