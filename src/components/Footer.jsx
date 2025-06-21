@@ -24,7 +24,7 @@ const Footer = () => {
           className="subtitle fs-6 text-center py-3"
           style={{ color: "#828282" }}
         >
-          Vignesh S 2025
+          © 2025 Vignesh Viki. All Rights Reserved.
         </p>
       </div>
       <div style={{ width: "100%", overflow: "hidden" }}>
